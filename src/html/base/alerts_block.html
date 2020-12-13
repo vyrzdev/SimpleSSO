@@ -1,0 +1,15 @@
+<script>
+    function alertClear(alertObject) {
+        alertObject.style.opacity = "0";
+        setTimeout(function (){
+            alertObject.style.display = "none"
+        }, 600)
+    }
+</script>
+<div class="alert-container">
+    {% for alert in alerts %}
+        <div class="alert" onclick="alertClear(this)">
+            {{ alert.message }}
+        </div>
+    {% endfor %}
+</div>

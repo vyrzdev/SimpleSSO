@@ -1,0 +1,27 @@
+.alert-container {
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    width: 90%;
+}
+.alert {
+    width: 100%;
+    color: #cccccc;
+    padding: 1em;
+    margin: 10px 0;
+    background-color: #111111;
+    opacity: 1;
+    transition: opacity 600ms;
+}
+
+@media (min-width: 300px) {
+    .alert-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 700px) {
+    .alert-container {
+        width: 30%;
+    }
+}

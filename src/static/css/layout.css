@@ -1,0 +1,77 @@
+.form {
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+}
+
+.form-input-container-1 {
+    margin: 1.5em auto;
+    width: 100%;
+}
+
+.form-container {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.form-input-1 {
+    display: block;
+    width: 100%;
+    background-color: inherit;
+    height: 2.5em;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 30%;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+.form-submit-link {
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    margin: 1em auto 0.5em auto;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.form-input-underlink-1 {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    margin-top: 0.1em;
+}
+
+
+@media (min-width: 300px) {
+    .middle-box {
+        margin: 3em auto 0 auto;
+        max-width: 95%;
+        min-width: 75%;
+        padding-top: 2em;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .middle-box {
+        margin: 3em auto 0 auto;
+        max-width: 400px;
+        min-width: 200px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}

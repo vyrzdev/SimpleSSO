@@ -1,0 +1,32 @@
+{% extends "layouts/responsive_middle_box.html" %}
+
+{% block middle %}
+    <div class="branding">
+        <img class="logo" src="/static/svg/logo.svg">
+        <h1 class="welcome-text">Welcome</h1>
+    </div>
+    <div class="form-container">
+        <form id="login-form" class="login-form form" action="/login?redirectURL={{ redirectURL }}" method="post">
+            <div class="form-input-container-1">
+                <label for="email-input" class="form-label-1">Email</label>
+                <input class="form-input-1" type="email" name="email" id="email-input">
+            </div>
+            <div class="form-input-container-1">
+                <label for="password-input" class="form-label-1">Password</label>
+                <input class="form-input-1" type="password" name="password" id="password-input">
+                <a href="/forgot_password"><span class="form-input-underlink-1">Forgot Password?</span></a>
+            </div>
+            <noscript>
+                <input type="submit" value="Login">
+            </noscript>
+            <a class="form-submit-link" onclick="submitLogin()" href="#">Login</a>
+            <a href="/register?redirectURL={{ redirectURL }}"><span class="form-input-underlink-1">Register for an account.</span></a>
+        </form>
+    </div>
+    <script>
+        function submitLogin() {
+            document.getElementById("login-form").submit();
+        }
+    </script>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "layouts/responsive_middle_box.html" %}
+
+{% block middle %}
+    <div class="branding">
+        <img class="logo" src="/static/svg/logo.svg">
+        <h1 class="welcome-text">Register</h1>
+    </div>
+    <div class="form-container">
+        <form id="register-form" class="register-form form" action="/register" method="post">
+            <div class="form-input-container-1">
+                <label for="email-input" class="form-label-1">Email</label>
+                <input class="form-input-1" type="email" name="email" id="email-input">
+            </div>
+            <div class="form-input-container-1">
+                <label for="password-input" class="form-label-1">Password</label>
+                <input class="form-input-1" type="password" name="password" id="password-input">
+            </div>
+            <div class="form-input-container-1">
+                <label for="confirm-password-input" class="form-label-1">Confirm Password</label>
+                <input class="form-input-1" type="password" name="confirm_password" id="confim-password-input">
+            </div>
+            <noscript>
+                <input type="submit" value="Register">
+            </noscript>
+            <a class="form-submit-link" onclick="submitLogin()" href="#">Register</a>
+            <a href="/login"><span class="form-input-underlink-1">I already have an account.</span></a>
+        </form>
+    </div>
+    <script>
+        function submitLogin() {
+            document.getElementById("register-form").submit();
+        }
+    </script>
+
+{% endblock %}

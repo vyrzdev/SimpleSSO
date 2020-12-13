@@ -1,0 +1,38 @@
+
+body {
+    background-color: #cccccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.middle-box {
+    background-color: #eeeeee;
+    box-shadow: #444444 5px 5px 5px;
+}
+
+.form-input-1 {
+    border-bottom: 1px gray solid;
+}
+
+.form-submit-link {
+    background-color: #222222;
+    color: #cccccc;
+}
+
+.form-input-underlink-1 {
+    font-weight: normal;
+    color: #444444;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
