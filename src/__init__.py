@@ -7,7 +7,7 @@ from sendgrid import SendGridAPIClient
 app = Flask(__name__, template_folder="html")
 login = LoginManager(app)
 email = SendGridAPIClient(
-    api_key="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"
+    api_key="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" # Invalid - Example Key
 )
 
 login.login_view = "login_identity"
