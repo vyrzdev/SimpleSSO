@@ -6,9 +6,9 @@ from sendgrid import SendGridAPIClient
 
 app = Flask(__name__, template_folder="html")
 login = LoginManager(app)
-email = SendGridAPIClient(
-    api_key="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" # Invalid - Example Key
-)
+#email = SendGridAPIClient(
+#    api_key="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" # Invalid - Example Key
+#)
 
 login.login_view = "login_identity"
 
@@ -49,5 +49,5 @@ def start(production: bool = None):
         print("No production ready web server has been configured as of yet.")
         exit()
     else:
-        email_utils.sendVerificationEmail("rattongaming@gmail.com", "https://www.google.com")
+        #email_utils.sendVerificationEmail("rattongaming@gmail.com", "https://www.google.com")
         app.run(host="0.0.0.0", port=5000, debug=True)
